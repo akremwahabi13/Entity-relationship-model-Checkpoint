@@ -1,0 +1,52 @@
+Checkpoint Objective
+You decide to join a very large known gym chain. When you arrive, you go to the reception. You find the owner arguing with a member who wants to attend a session he has not registered for. Your turn finally arrives, the owner apologizes for letting you wait so long. He explains that his employee, in charge of registrations, made a mistake in choosing the member's session.
+You are surprised that such a recognized gymnasium still uses the cards to manage its large number of clients. So you're talking to the owner to  fix this problem. Interested in your knowledge, he asks you to find him a solution, in return he will offer you a free 3-months inscription.  
+The owner informs you that:
+ he has several gymnasiums which are distinguished by their names, addresses and telephone number. 
+Members can register at one of these gymnasiums, so they must provide the following information: unique identifier, last name, first name, address, date of birth and gender. 
+Each session is characterized by a type of sport and a schedule and can accommodate a maximum of 20 members. 
+The sessions are led by a maximum of two coaches who have a last name, first name, age and specialty.
+
+Based on the information provided, we can create an entity-relationship model for the gym chain. Here's a representation of the model:
+
+Entities:
+1. Gymnasium:
+   - Name (attribute)
+   - Address (attribute)
+   - Telephone Number (attribute)
+
+2. Member:
+   - Unique Identifier (attribute)
+   - Last Name (attribute)
+   - First Name (attribute)
+   - Address (attribute)
+   - Date of Birth (attribute)
+   - Gender (attribute)
+
+3. Session:
+   - Type of Sport (attribute)
+   - Schedule (attribute)
+   - Maximum Capacity (attribute)
+
+4. Coach:
+   - Last Name (attribute)
+   - First Name (attribute)
+   - Age (attribute)
+   - Specialty (attribute)
+
+Relationships:
+1. Register:
+   - Member (participant)
+   - Gymnasium (participant)
+
+2. Attend:
+   - Member (participant)
+   - Session (participant)
+
+3. Lead:
+   - Coach (participant)
+   - Session (participant)
+
+Note: The relationships mentioned above are represented by connecting lines between the entities. The "participant" notation indicates the participation of an entity in a relationship.
+
+This entity-relationship model captures the relationships between the gymnasium, member, session, and coach entities, and represents the attributes associated with each entity. It provides a foundation for understanding the data structure and can be used as a starting point for designing a more detailed database schema or system for the gym chain.
